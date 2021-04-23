@@ -1,5 +1,5 @@
 baseurl: https://nourn.netlify.app
-title: Nan Nourn
+title: Nan
 theme: hugo-theme-console
 languageCode: en-us
 params:
@@ -13,7 +13,7 @@ params:
       url: photos/
     - name: contact/
       url: contact/
-    - name: serious conservation/
+    - name: serious-conservation/
       url: http://seriousconservation.org
   titleCutting: yes
 
