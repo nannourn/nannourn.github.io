@@ -1,5 +1,5 @@
 ---
-title: Contact
+title: Social
 ---
 Email: [nan@msu.edu](mailto:nan@msu.edu)
 
