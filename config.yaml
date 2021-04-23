@@ -13,6 +13,8 @@ params:
       url: photos/
     - name: contact/
       url: contact/
+    - name: serious conservation/
+      url: http://seriousconservation.org
   titleCutting: yes
 
 markup:
