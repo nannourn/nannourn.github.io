@@ -1,5 +1,5 @@
 baseurl: https://nourn.netlify.app
-title: console-demo
+title: Nan Nourn
 theme: hugo-theme-console
 languageCode: en-us
 params:
