@@ -12,7 +12,7 @@ params:
     - name: photos/
       url: photos/
     - name: social/
-      url: social/
+      url: contact/
   titleCutting: yes
 
 markup:
