@@ -11,10 +11,8 @@ params:
       url: posts/
     - name: photos/
       url: photos/
-    - name: contact/
-      url: contact/
-    - name: serious-conservation/
-      url: http://seriousconservation.org
+    - name: social/
+      url: social/
   titleCutting: yes
 
 markup:
