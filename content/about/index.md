@@ -2,31 +2,9 @@
 date: "2016-11-05T21:05:33+05:30"
 title: About
 ---
+Hi, I'm Nan! I'm a Ph.D. student in the Department of Fisheries & Wildlife and Ecology, Evolution & Behavior program at Michigan State University.
 
-A minimal, responsive and light theme for Hugo inspired by Linux console. 
+My research interests include interdisciplinary research, wildlife ecology, conservation biology, socio-ecological systems, and Bayesian and spatial statistics. I apply research tools from these relevant disciplines in order to examine pressing issues in conservation and sustainability in Southeast Asia. 
 
-![Console](https://github.com/mrmierzejewski/hugo-theme-console/blob/master/images/preview.png?raw=true)
+![Nan holding a pronghorn fawn in Marfa, Texas](profile.jpg)
 
-## Installation
-
-```
-$ mkdir themes
-$ cd themes
-$ git submodule add https://github.com/mrmierzejewski/hugo-theme-console.git hugo-theme-console
-```
-    
-See the [Hugo documentation](https://gohugo.io/themes/installing/) for more information.
-
-## Configuration
-
-Set theme parameter in your config file:
-
-```
-theme = "hugo-theme-console"
-```
-
-## License
-
-Copyright © 2020 [Marcin Mierzejewski](https://mrmierzejewski.com/)
-
-The theme is released under the MIT License. Check the [original theme license](https://github.com/panr/hugo-theme-terminal/blob/master/LICENSE.md) for additional licensing information.
