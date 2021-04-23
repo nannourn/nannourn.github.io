@@ -1,7 +1,7 @@
 ---
 title: Contact
 ---
-Email: [nan@msu.edu](nan@msu.edu)
+Email: [nan@msu.edu](mailto: nan@msu.edu)
 
 Twitter: [seriouswildlife](https://twitter.com/seriouswildlife)
 
