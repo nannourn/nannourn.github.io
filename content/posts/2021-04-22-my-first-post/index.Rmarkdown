@@ -1,5 +1,5 @@
 ---
-title: "First Post"
+title: "My First Post"
 author: "Nan Nourn"
 date: '2021-04-22'
 slug: []
