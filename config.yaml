@@ -1,0 +1,19 @@
+baseurl: https://nourn.netlify.app
+title: console-demo
+theme: hugo-theme-console
+languageCode: en-us
+params:
+  animateStyle: animated zoomIn fast
+  navlinks:
+    - name: about/
+      url: about/
+    - name: posts/
+      url: posts/
+    - name: photos/
+      url: photos/
+  titleCutting: yes
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
