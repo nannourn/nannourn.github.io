@@ -11,7 +11,7 @@ params:
       url: posts/
     - name: photos/
       url: photos/
-    - name: contact
+    - name: contact/
       url: contact/
   titleCutting: yes
 
