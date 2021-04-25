@@ -21,7 +21,7 @@ library(magrittr) # used for double pipe assignment operator
 library(stars)
 ```
 
-Note: I use the double assignment operator in my work flow, read about [%<>% here](https://magrittr.tidyverse.org/reference/compound.html). The double pipe basically acts a normal pipe, then updates the r object without having to change the name. I also use the `here()` function to locate my files. Jenny Bryan [explains why you should use `here()`](https://github.com/jennybc/here_here).
+Note: I use the double assignment operator in my work flow, read about [%<>% here](https://magrittr.tidyverse.org/reference/compound.html). The double pipe basically acts as a normal pipe, then updates the object simultaneously without having to change the name. I also use the `here()` function to locate my files. Jenny Bryan [explains why you should use `here()`](https://github.com/jennybc/here_here).
 
 I use the `stars` package to load my .tiff file.
 

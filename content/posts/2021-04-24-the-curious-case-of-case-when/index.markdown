@@ -22,7 +22,7 @@ library(magrittr) # used for double pipe assignment operator
 library(stars)
 ```
 
-Note: I use the double assignment operator in my work flow, read about [%<>% here](https://magrittr.tidyverse.org/reference/compound.html). The double pipe basically acts a normal pipe, then updates the r object without having to change the name. I also use the `here()` function to locate my files. Jenny Bryan [explains why you should use `here()`](https://github.com/jennybc/here_here).
+Note: I use the double assignment operator in my work flow, read about [%<>% here](https://magrittr.tidyverse.org/reference/compound.html). The double pipe basically acts as a normal pipe, then updates the object simultaneously without having to change the name. I also use the `here()` function to locate my files. Jenny Bryan [explains why you should use `here()`](https://github.com/jennybc/here_here).
 
 I use the `stars` package to load my .tiff file.
 
@@ -124,16 +124,16 @@ ppws %>%
 ## # A tibble: 10 x 3
 ##        x     y value
 ##    <dbl> <dbl> <dbl>
-##  1  107.  13.0     0
-##  2  107.  12.5     0
-##  3  107.  12.6     2
-##  4  107.  12.6     0
-##  5  107.  12.8     0
-##  6  107.  12.7     0
-##  7  107.  12.6     3
-##  8  107.  12.9     0
-##  9  107.  12.9     0
-## 10  107.  13.0     0
+##  1  107.  12.8     3
+##  2  107.  12.8     3
+##  3  107.  12.7     2
+##  4  107.  12.6     3
+##  5  107.  12.7     3
+##  6  107.  12.9     3
+##  7  107.  12.7     0
+##  8  107.  12.6     0
+##  9  107.  12.9     3
+## 10  107.  12.7     3
 ```
 
 Okay cool, we now are pretty darn sure each (x,y) row has a corresponding landcover value. We can now use the combination of the `mutate()` and `case_when()` functions to create the land cover assignments. You can also create a new column with base R subsetting and indexing, but since I just started using R last year, I've been too ingrained in `tidyverse` ways and sipping the kool-aid. I also went ahead and created a "year" column just in case. The beauty of the `stars` package is to take advantage of `tidyverse` work flows.
@@ -169,18 +169,18 @@ ppws %>%
 
 ```
 ## # A tibble: 10 x 5
-##        x     y value  year landcover
-##    <dbl> <dbl> <dbl> <dbl> <chr>    
-##  1  107.  12.9     0  2020 <NA>     
-##  2  107.  12.6     3  2020 canopy   
-##  3  107.  12.9     3  2020 canopy   
-##  4  107.  12.6     1  2020 water    
-##  5  107.  12.9     0  2020 <NA>     
-##  6  107.  12.8     3  2020 canopy   
-##  7  107.  12.8     3  2020 canopy   
-##  8  107.  12.7     0  2020 <NA>     
-##  9  107.  12.6     0  2020 <NA>     
-## 10  107.  12.6     1  2020 water
+##        x     y value  year landcover  
+##    <dbl> <dbl> <dbl> <dbl> <chr>      
+##  1  107.  13.0     0  2020 <NA>       
+##  2  107.  12.7     3  2020 canopy     
+##  3  107.  13.0     0  2020 <NA>       
+##  4  107.  12.9     0  2020 <NA>       
+##  5  107.  12.8     3  2020 canopy     
+##  6  107.  12.7     2  2020 agriculture
+##  7  107.  12.6     0  2020 <NA>       
+##  8  107.  12.6     0  2020 <NA>       
+##  9  107.  12.6     1  2020 water      
+## 10  107.  12.8     1  2020 water
 ```
 
 Okay, now I can use the `geom_stars()` function with `ggplot()` and use our "landcover" column values for aesthetics!
