@@ -9,8 +9,8 @@ params:
       url: about/
     - name: posts/
       url: posts/
-    - name: photos/
-      url: photos/
+    - name: projects/
+      url: projects/
     - name: social/
       url: social/
   titleCutting: yes
