@@ -26,7 +26,7 @@ Nan Nourn is a conservation ecologist and Ph.D. student at Michigan State Univer
 <h1>Latest photos</h1>
 
 <div class="image-grid">
-{{ with .Site.GetPage "/photos" }}
+{{ with .Site.GetPage "/projects" }}
     {{ range first 3 (sort .Data.Pages "Date" "desc")}}
         <a href="{{ .Permalink }}" title="{{ .Title }}">
         {{ $image := .Page.Resources.GetMatch .Params.image }}
