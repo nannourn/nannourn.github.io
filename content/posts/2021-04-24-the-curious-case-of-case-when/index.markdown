@@ -7,7 +7,7 @@ categories: [R, GIS, Spatial]
 tags: [stars, raster, cambodia, protected area]
 summary: Creating land cover classification maps in R with a handy .tiff image.
 ---
-While this post may only make sense for the graduate students who were enrolled in <a href="https://www.ersamlab.com">Kyla Dahlin</a>'s graduate GEO 837: Applications Terrestrial Remote Sensing class, it is fairly easy to produce a land cover classification map in R with a .tiff file if land cover designations were classified *a priori* and determined or known by the user.
+While this post may only make sense for the graduate students who were enrolled in <a href="https://www.ersamlab.com">Dr. Kyla Dahlin</a>'s graduate GEO 837: Applications Terrestrial Remote Sensing class, it is fairly easy to produce a land cover classification map in R with a .tiff file if land cover designations were classified *a priori* and determined or known by the user.
 
 For example, I obtained my .tiff image after running a Random Forest algorithm for my scene of interest in Google Earth Engine, [Phnom Prich Wildlife Sanctuary in Cambodia](https://wwf.panda.org/?273810/First-profile-of-Phnom-Prich-Wildlife-Sanctuary). During class, I remembered that I assigned a land cover value of 1 that corresponded to water, 2 corresponded to agriculture, 3 corresponded to canopy and 4 corresponded to clouds. Finally, 0 corresponded to NA values. [Read about classification in Google Earth Engine here.](https://developers.google.com/earth-engine/guides/classification)
 
@@ -124,16 +124,16 @@ ppws %>%
 ## # A tibble: 10 x 3
 ##        x     y value
 ##    <dbl> <dbl> <dbl>
-##  1  107.  12.8     3
-##  2  107.  12.8     3
-##  3  107.  12.7     2
-##  4  107.  12.6     3
-##  5  107.  12.7     3
-##  6  107.  12.9     3
-##  7  107.  12.7     0
-##  8  107.  12.6     0
+##  1  107.  13.0     0
+##  2  107.  12.9     2
+##  3  107.  12.7     0
+##  4  107.  12.8     3
+##  5  107.  12.7     0
+##  6  107.  12.7     1
+##  7  107.  12.6     1
+##  8  107.  12.7     0
 ##  9  107.  12.9     3
-## 10  107.  12.7     3
+## 10  107.  12.9     0
 ```
 
 Okay cool, we now are pretty darn sure each (x,y) row has a corresponding landcover value. We can now use the combination of the `mutate()` and `case_when()` functions to create the land cover assignments. You can also create a new column with base R subsetting and indexing, but since I just started using R last year, I've been too ingrained in `tidyverse` ways and sipping the kool-aid. I also went ahead and created a "year" column just in case. The beauty of the `stars` package is to take advantage of `tidyverse` work flows.
@@ -169,18 +169,18 @@ ppws %>%
 
 ```
 ## # A tibble: 10 x 5
-##        x     y value  year landcover  
-##    <dbl> <dbl> <dbl> <dbl> <chr>      
-##  1  107.  13.0     0  2020 <NA>       
-##  2  107.  12.7     3  2020 canopy     
-##  3  107.  13.0     0  2020 <NA>       
-##  4  107.  12.9     0  2020 <NA>       
-##  5  107.  12.8     3  2020 canopy     
-##  6  107.  12.7     2  2020 agriculture
-##  7  107.  12.6     0  2020 <NA>       
-##  8  107.  12.6     0  2020 <NA>       
-##  9  107.  12.6     1  2020 water      
-## 10  107.  12.8     1  2020 water
+##        x     y value  year landcover
+##    <dbl> <dbl> <dbl> <dbl> <chr>    
+##  1  107.  12.7     3  2020 canopy   
+##  2  107.  13.0     0  2020 <NA>     
+##  3  107.  12.5     0  2020 <NA>     
+##  4  107.  12.9     0  2020 <NA>     
+##  5  107.  12.6     0  2020 <NA>     
+##  6  107.  12.9     0  2020 <NA>     
+##  7  107.  12.6     1  2020 water    
+##  8  107.  12.9     0  2020 <NA>     
+##  9  107.  12.5     0  2020 <NA>     
+## 10  107.  12.8     3  2020 canopy
 ```
 
 Okay, now I can use the `geom_stars()` function with `ggplot()` and use our "landcover" column values for aesthetics!
