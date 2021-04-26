@@ -1,5 +1,5 @@
 baseurl: https://nan.rbind.io
-title: Nan
+title: nan
 theme: hugo-theme-console
 languageCode: en-us
 params:
