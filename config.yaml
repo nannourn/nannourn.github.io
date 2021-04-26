@@ -1,4 +1,4 @@
-baseurl: https://nourn.netlify.app
+baseurl: https://nan.rbind.io
 title: Nan
 theme: hugo-theme-console
 languageCode: en-us
@@ -6,13 +6,13 @@ params:
   animateStyle: animated zoomIn fast
   navlinks:
     - name: about/
-      url: about/
+      url: /about/
     - name: posts/
-      url: posts/
+      url: /posts/
     - name: projects/
-      url: projects/
+      url: /projects/
     - name: social/
-      url: social/
+      url: /social/
   titleCutting: yes
 
 markup:
