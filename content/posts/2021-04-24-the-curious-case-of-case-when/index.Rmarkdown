@@ -12,7 +12,7 @@ While this post may only make sense for the graduate students who were enrolled 
 For example, I obtained my .tiff image after running a Random Forest algorithm for my scene of interest in Google Earth Engine, [Phnom Prich Wildlife Sanctuary in Cambodia](https://wwf.panda.org/?273810/First-profile-of-Phnom-Prich-Wildlife-Sanctuary). During class, I remembered that I assigned a land cover value of 1 that corresponded to water, 2 corresponded to agriculture, 3 corresponded to canopy and 4 corresponded to clouds. Finally, 0 corresponded to NA values. [Read about classification in Google Earth Engine here.](https://developers.google.com/earth-engine/guides/classification)
 
 We use a combination of the `stars` and `tidyverse` packages and work flow to help us plot our land cover maps. [The `stars` package attempts to serve as an 
-"update" to the tried and true `raster` package](https://r-spatial.github.io/stars/), and is way more friendly to `tidyverse` work flows (which is why I've chosen to adopt it).
+"update" to the tried and true `raster` package](https://r-spatial.github.io/stars/), and is way more friendly to `tidyverse` work flows, which is why I've chosen to adopt it. BUT your `raster` skillz should still be adept, as it is still the main R package when analyzing spatial raster data in R. 
 
 ```{r message=FALSE, warning=FALSE}
 library(tidyverse)
