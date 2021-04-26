@@ -22,7 +22,7 @@ library(magrittr) # used for double pipe assignment operator
 library(stars)
 ```
 
-Notes: I use the double assignment operator in my work flow, read about [%<>% here](https://magrittr.tidyverse.org/reference/compound.html). The double pipe basically acts as a normal pipe, then updates the object simultaneously without having to change the name. I also use the `here()` function to locate my files. Jenny Bryan [explains why you should use `here()`](https://github.com/jennybc/here_here).
+Notes: I use the double assignment operator in my work flow, read about [%<>% here](https://magrittr.tidyverse.org/reference/compound.html). The double pipe basically acts as a normal pipe, then updates the object simultaneously without having to change the name. I also use the `here()` function to locate my files. Jenny Bryan [explains why you should use `here()`](https://github.com/jennybc/here_here). This also is will not be most accurate land cover map, as this was a product of a Google Earth Engine intro to classification exercise. 
 
 I use the `stars` package to load my .tiff file.
 
@@ -47,6 +47,7 @@ ppws # take a quick look
 ## x    1 2355 106.512  0.000269495 WGS 84 FALSE   NULL [x]
 ## y    1 1843  13.001 -0.000269495 WGS 84 FALSE   NULL [y]
 ```
+
 The key here is to know what's going on with your `stars` object. We know that the `stars` object has 2 dimensions, which is our longitude and latitude (x, y) information. In each cell, there is 1 attribute, which is our land cover values that we knew of beforehand. This forms the basis of a raster image. We also can look at other information, such as the coordinate reference system and max and min values for latitude and longitude.
 
 I can also use the `plot()` function to take a simple look at my tiff image. Note the legend and corresponding attribute values.
@@ -124,16 +125,16 @@ ppws %>%
 ## # A tibble: 10 x 3
 ##        x     y value
 ##    <dbl> <dbl> <dbl>
-##  1  107.  12.8     3
-##  2  107.  12.5     0
-##  3  107.  12.8     3
+##  1  107.  12.8     0
+##  2  107.  12.7     3
+##  3  107.  12.5     0
 ##  4  107.  12.9     0
-##  5  107.  12.8     3
-##  6  107.  12.8     0
-##  7  107.  12.7     3
-##  8  107.  12.6     3
-##  9  107.  12.6     2
-## 10  107.  13.0     0
+##  5  107.  12.5     0
+##  6  107.  12.6     3
+##  7  107.  12.6     1
+##  8  107.  13.0     0
+##  9  107.  12.6     3
+## 10  107.  12.6     3
 ```
 
 Okay cool, we now are pretty darn sure each (x,y) row has a corresponding landcover value. We can now use the combination of the `mutate()` and `case_when()` functions to create the land cover assignments. You can also create a new column with base R subsetting and indexing, but since I just started using R last year, I've been too ingrained in `tidyverse` ways and sipping the kool-aid. I also went ahead and created a "year" column just in case. The beauty of the `stars` package is to take advantage of `tidyverse` work flows.
@@ -171,16 +172,16 @@ ppws %>%
 ## # A tibble: 10 x 5
 ##        x     y value  year landcover
 ##    <dbl> <dbl> <dbl> <dbl> <chr>    
-##  1  107.  12.9     0  2020 <NA>     
-##  2  107.  12.7     3  2020 canopy   
-##  3  107.  12.7     3  2020 canopy   
-##  4  107.  12.7     0  2020 <NA>     
-##  5  107.  12.8     3  2020 canopy   
-##  6  107.  13.0     0  2020 <NA>     
-##  7  107.  12.7     0  2020 <NA>     
-##  8  107.  12.8     0  2020 <NA>     
+##  1  107.  12.7     3  2020 canopy   
+##  2  107.  13.0     0  2020 <NA>     
+##  3  107.  12.8     3  2020 canopy   
+##  4  107.  13.0     0  2020 <NA>     
+##  5  107.  12.9     0  2020 <NA>     
+##  6  107.  12.7     0  2020 <NA>     
+##  7  107.  12.9     3  2020 canopy   
+##  8  107.  12.8     3  2020 canopy   
 ##  9  107.  12.8     3  2020 canopy   
-## 10  107.  12.8     1  2020 water
+## 10  107.  12.8     0  2020 <NA>
 ```
 
 Okay, now I can use the `geom_stars()` function with `ggplot()` and use our "landcover" column values for aesthetics!
