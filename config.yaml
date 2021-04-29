@@ -37,3 +37,9 @@ frontmatter:
   publishDate:
   - publishDate
   - date
+
+ignoreFiles:
+  -\.Rmd$
+  -\.Rmarkdown$ 
+  -\.knit\\.md$
+  -\.utf8\\.md$
