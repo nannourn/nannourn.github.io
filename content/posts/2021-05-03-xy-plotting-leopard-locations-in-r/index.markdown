@@ -5,6 +5,7 @@ date: '2021-05-03'
 slug: []
 categories: [R, GIS, Spatial]
 tags: [gbif, sf, map, occurrence, GBIF, open science]
+featured_image : 'featured.jpeg'
 summary: Creating species occurrence maps with x,y location data.
 ---
 <img src="images/featured.jpeg" alt="Panthera pardus"/>
@@ -147,17 +148,17 @@ pardus %>%
 ```
 
 ```
-##                                         locality n
-## 1                                         Africa 8
-## 2                                          Uhehe 3
-## 3                  Honolulu Zoo (captive animal) 1
-## 4                                    Komite Farm 2
-## 5                     in Omaha, Henry Doorly Zoo 1
-## 6                                Fleishacker Zoo 1
-## 7  Captive, Zoo Born; Metro Toronto Zoo, Toronto 1
-## 8                              Northern Province 2
-## 9  Point Defiance Zoo, Tacoma, Pierce County, WA 1
-## 10                                        África 1
+##                                       locality n
+## 1  Mucusso Game Preserve, 90 mi. NNW of Dirico 1
+## 2                           Black Earth Cave 3 1
+## 3                                 Sea of San'a 1
+## 4                                     Erie Zoo 1
+## 5                                        Kenya 1
+## 6                       Narbada River Drainage 1
+## 7                         Raimona, Dt Goalpara 1
+## 8             Copananpally, Zahirabad District 1
+## 9                                     Botswana 3
+## 10                              Washington Zoo 1
 ```
 
 So out of ~5,000 records downloaded, 1,772 records do not have geo-referenced coordinates and were inputted as (NA,NA) in the dataset. A lot of the records that were not geo-referenced but had a recorded locality listed were sightings of leopards from zoos, and records that wouldn't be too particularly useful in producing a map, such as "Africa", "on Simiyu River", "see remarks", etc.
