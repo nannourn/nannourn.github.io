@@ -10,7 +10,7 @@ twitter:
   image: "/feature.jpg"
   title: "title"
 ---
-<img src="post-cover.jpg" alt="Panthera pardus"/>
+<img src="/feature.jpg" alt="Panthera pardus"/>
 
 One of the first steps in exploring spatial analyses with R is to produce a map with recorded (x, y) locations; for example, many researchers in wildlife biology mark animal locations with a handheld Garmin GPS and would like to see on a map where all the occurrences of their animal locations have been recorded. I remember it took me forever just to learn this basic exercise so I thought it would be a nice blog post for students in the same position and beginning their spatial journey in becoming a SAP (Spatially Aware Professional).
 
