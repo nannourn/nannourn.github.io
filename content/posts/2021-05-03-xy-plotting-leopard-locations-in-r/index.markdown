@@ -149,17 +149,17 @@ pardus %>%
 ```
 
 ```
-##                                       locality  n
-## 1                                           Nr 10
-## 2                                        Dondo  1
-## 3                                        Seoul  1
-## 4                          Kamerun, Debundscha  2
-## 5  Triangle, 10 Mi E, Buffalo Range Game Ranch  1
-## 6                                  Hersi Barri  1
-## 7                                            .  2
-## 8                                 Sea of San'a  1
-## 9                         near Lake Tanganyika  1
-## 10                                 Abyssinia /  1
+##                                       locality n
+## 1                                    Inhaminga 1
+## 2                                Zambesi River 1
+## 3  Mucusso Game Preserve, 90 mi. NNW of Dirico 1
+## 4                                  Calgary Zoo 1
+## 5                             no locality data 1
+## 6            in Lincoln, Folsom Children's Zoo 1
+## 7                Oklahoma City Zoological Park 4
+## 8                               Död i Göteborg 1
+## 9                       Narbada River Drainage 1
+## 10                                 East Africa 3
 ```
 
 So out of ~5,000 records downloaded, 1,772 records do not have geo-referenced coordinates and were inputted as (NA,NA) in the dataset. A lot of the records that were not geo-referenced but had a recorded locality listed were sightings of leopards from zoos, and records that wouldn't be too particularly useful in producing a map, such as "Africa", "on Simiyu River", "see remarks", etc.
