@@ -1,6 +1,12 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
 
+{{ with .Params.images }}
+		{{ range first 1 . }}
+	<meta property="og:image" content="{{ . | absURL }}" />
+		{{ end }}
+	{{ end }}
+
 {{ .PublishDate.Format "Jan. 2, 2006" }}
 {{ with .Params.linkedin }}
     // <a href="{{ . }}">Linkedin</a>
@@ -12,3 +18,4 @@
 {{ .Content }}
 {{ template "_internal/disqus.html" . }}
 {{ end }}
+
