@@ -13,7 +13,7 @@ tags:
 summary: All about my adventures with Hugo, Blogdown and Netlify.
 twitterCard:
   card: "summary"
-  image: "post-cover.jpg"
+  image: "feature.jpg"
   site: "seriouswildlife"
   creator: "seriouswildlife"
   title: "title"
