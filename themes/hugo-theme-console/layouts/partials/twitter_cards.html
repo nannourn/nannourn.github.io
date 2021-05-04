@@ -2,7 +2,7 @@
 {{ $image := $.Resources.GetMatch . }}
 {{ with $image }}
 {{ $thumb := .Resize "400x" }}
-<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:card" content="feature"/>
 <meta name="twitter:image" content="{{ $thumb.Permalink }}">
 {{ end }}
 {{ end }}
