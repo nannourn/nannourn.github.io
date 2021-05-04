@@ -5,7 +5,7 @@ date: '2021-05-03'
 slug: []
 categories: [R, GIS, Spatial]
 tags: [gbif, sf, map, occurrence, GBIF, open science]
-featured_image : 'featured.jpg'
+images : 'featured.jpg'
 summary: Creating species occurrence maps with x,y location data.
 ---
 <img src="images/featured.jpg" alt="Panthera pardus"/>
