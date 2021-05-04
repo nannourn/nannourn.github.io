@@ -11,8 +11,6 @@ params:
       url: /posts/
     - name: projects/
       url: /projects/
-    - name: social/
-      url: /social/
   titleCutting: yes
 
 markup:
