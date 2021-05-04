@@ -10,9 +10,13 @@ tags:
 - Hugo
 - Netlify
 - Blogdown
-images:
-  - post-cover.jpg
 summary: All about my adventures with Hugo, Blogdown and Netlify.
+twitterCard:
+  card: "summary"
+  image: "post-cover.jpg"
+  site: "seriouswildlife"
+  creator: "seriouswildlife"
+  title: "title"
 ---
 Somehow, it only took me 12 hours to figure out how to integrate Hugo, Blogdown and Netlify. Next step: secure an *.rbind.io domain name!
 

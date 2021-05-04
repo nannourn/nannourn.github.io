@@ -3,8 +3,6 @@ title: nan
 theme: hugo-theme-console
 languageCode: en-us
 params:
-  images:
-    - site-feature-image.jpg
   animateStyle: animated zoomIn fast
   navlinks:
     - name: about/
@@ -42,3 +40,13 @@ frontmatter:
   publishDate:
   - publishDate
   - date
+  
+  params.twitterCard:
+    generate: true
+    card: "summary"
+    image: "https://19mvmv3yn2qc2bdb912o1t2n-wpengine.netdna-ssl.com/science/files/2018/08/tnc_51859534_preview-1260x708.jpg"
+    imageAlt: "Default Twitter Card Image"
+    site: "seriouswildlife"
+    creator: "seriouswildlife"
+    title: "nan nourn"
+    description: "Your site description."
