@@ -5,7 +5,7 @@ date: '2021-05-03'
 slug: []
 categories: [R, GIS, Spatial]
 tags: [gbif, sf, map, occurrence, GBIF, open science]
-images: [post-cover.jpg]
+image: 'post-cover.jpg'
 summary: Creating species occurrence maps with x,y location data.
 ---
 <img src="post-cover.jpg" alt="Panthera pardus"/>
@@ -148,17 +148,17 @@ pardus %>%
 ```
 
 ```
-##                                                             locality n
-## 1               Columbus Zoo, city of Columbus, Franklin County Ohio 1
-## 2                                                 Denver, Denver Zoo 1
-## 3                                                            Colombo 1
-## 4   San Francisco Zoo, San Francisco, San Francisco Co., California. 1
-## 5  Southwest Protectorate, Kahero (in northern part of Protectorate) 2
-## 6                                             Cap de Bonne-Espérance 1
-## 7                                                               Asia 1
-## 8                                              East Africa | Uganda] 2
-## 9                                                    Döda i Göteborg 1
-## 10                                      La Calle, North East Algeria 1
+##                                   locality  n
+## 1            No specific locality recorded  3
+## 2  Mugdampally Village, Zahirabad District  2
+## 3                               Zoo Berlin 52
+## 4                                 Nagasaki  1
+## 5                                  NO DATA  1
+## 6                            Rumathe River  1
+## 7                         Serengeti Plains  2
+## 8                      in Gulu/Kitgun area  1
+## 9                   Nsombe; Lake Bangweale  1
+## 10           Tiergarten Wilhelma/Stuttgart  2
 ```
 
 So out of ~5,000 records downloaded, 1,772 records do not have geo-referenced coordinates and were inputted as (NA,NA) in the dataset. A lot of the records that were not geo-referenced but had a recorded locality listed were sightings of leopards from zoos, and records that wouldn't be too particularly useful in producing a map, such as "Africa", "on Simiyu River", "see remarks", etc.
