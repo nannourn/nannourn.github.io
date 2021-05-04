@@ -10,7 +10,7 @@ twitter:
   image: "/feature.jpg"
   title: "title"
 ---
-![]('/feature.jpg')
+![Leopard](images/feature.jpg)
 
 One of the first steps in exploring spatial analyses with R is to produce a map with recorded (x, y) locations; for example, many researchers in wildlife biology mark animal locations with a handheld Garmin GPS and would like to see on a map where all the occurrences of their animal locations have been recorded. I remember it took me forever just to learn this basic exercise so I thought it would be a nice blog post for students in the same position and beginning their spatial journey in becoming a SAP (Spatially Aware Professional).
 
@@ -150,17 +150,17 @@ pardus %>%
 ```
 
 ```
-##                                                locality n
-## 1                                              Camp III 1
-## 2                                                 Birma 1
-## 3  Columbus Zoo, city of Columbus, Franklin County Ohio 1
-## 4                                        Zoopark Erfurt 1
-## 5                           Foothills of Ruwenzori Mts. 1
-## 6                                      Nanding He River 1
-## 7         5 mi. W Sarestal Rest House, Dindori (Mandla) 1
-## 8                                                     . 2
-## 9                                              Gorumara 1
-## 10                                              Belinga 3
+##                                                            locality n
+## 1                                         Marsabit Forest Ecosystem 1
+## 2                       Mucusso Game Preserve, 90 mi. NNW of Dirico 1
+## 3                                             WESTERN KENYA, MGAADI 1
+## 4  San Francisco Zoo, San Francisco, San Francisco Co., California. 1
+## 5                                               Kamerun, Debundscha 2
+## 6                                                        Java (Ile) 1
+## 7                                     Masai Mara, Hunting Block 60a 1
+## 8                                                 Gondokoro, 7 mi E 1
+## 9                                                            Angola 2
+## 10                        New Moshi [Moshi], near Mount Kilimanjaro 1
 ```
 
 So out of ~5,000 records downloaded, 1,772 records do not have geo-referenced coordinates and were inputted as (NA,NA) in the dataset. A lot of the records that were not geo-referenced but had a recorded locality listed were sightings of leopards from zoos, and records that wouldn't be too particularly useful in producing a map, such as "Africa", "on Simiyu River", "see remarks", etc.
