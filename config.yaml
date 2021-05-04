@@ -13,7 +13,7 @@ params:
       url: /projects/
   titleCutting: yes
   images:
-  - site-feature-image.jpg
+  - feature.jpg
 
 markup:
   goldmark:
