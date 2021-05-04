@@ -5,10 +5,11 @@ date: '2021-05-03'
 slug: []
 categories: [R, GIS, Spatial]
 tags: [gbif, sf, map, occurrence, GBIF, open science]
-images: 'feature.jpg'
+images:
+  - post-cover.jpg
 summary: Creating species occurrence maps with x,y location data.
 ---
-<img src="feature.jpg" alt="Panthera pardus"/>
+<img src="post-cover.jpg" alt="Panthera pardus"/>
 
 One of the first steps in exploring spatial analyses with R is to produce a map with recorded (x, y) locations; for example, many researchers in wildlife biology mark animal locations with a handheld Garmin GPS and would like to see on a map where all the occurrences of their animal locations have been recorded. I remember it took me forever just to learn this basic exercise so I thought it would be a nice blog post for students in the same position and beginning their spatial journey in becoming a SAP (Spatially Aware Professional).
 

@@ -5,10 +5,11 @@ date: '2021-05-03'
 slug: []
 categories: [R, GIS, Spatial]
 tags: [gbif, sf, map, occurrence, GBIF, open science]
-images: 'feature.jpg'
+images:
+  - post-cover.jpg
 summary: Creating species occurrence maps with x,y location data.
 ---
-<img src="feature.jpg" alt="Panthera pardus"/>
+<img src="post-cover.jpg" alt="Panthera pardus"/>
 
 One of the first steps in exploring spatial analyses with R is to produce a map with recorded (x, y) locations; for example, many researchers in wildlife biology mark animal locations with a handheld Garmin GPS and would like to see on a map where all the occurrences of their animal locations have been recorded. I remember it took me forever just to learn this basic exercise so I thought it would be a nice blog post for students in the same position and beginning their spatial journey in becoming a SAP (Spatially Aware Professional).
 
@@ -148,17 +149,17 @@ pardus %>%
 ```
 
 ```
-##                                         locality n
-## 1                                          Uhehe 3
-## 2                                   Sea of San'a 1
-## 3                 Near Chuaka, Zanzibar Island / 1
-## 4                                        Makokou 1
-## 5  5 mi. W Sarestal Rest House, Dindori (Mandla) 1
-## 6                         Aichi, Higashiyama Zoo 1
-## 7                unspecified location in Myanmar 1
-## 8                     Woodland Park Zoo; Seattle 2
-## 9                           Guaso Ngishu Plateau 1
-## 10                                Kabalolot Hill 1
+##                               locality  n
+## 1                     Witkrans Pothole  1
+## 2                       Brookfield Zoo  1
+## 3                          Zoo Rostock  5
+## 4  Pt Defiance Zoo, Tacoma, Washington  1
+## 5                              Belinga  3
+## 6                                 Java  1
+## 7                          Zoo Leipzig 33
+## 8                      Fleishacker Zoo  1
+## 9                                  Bie  2
+## 10                                  Nr 10
 ```
 
 So out of ~5,000 records downloaded, 1,772 records do not have geo-referenced coordinates and were inputted as (NA,NA) in the dataset. A lot of the records that were not geo-referenced but had a recorded locality listed were sightings of leopards from zoos, and records that wouldn't be too particularly useful in producing a map, such as "Africa", "on Simiyu River", "see remarks", etc.
