@@ -4,7 +4,6 @@ theme: hugo-theme-console
 languageCode: en-us
 params:
   images:
-    - feature.jpg
   animateStyle: animated zoomIn fast
   navlinks:
     - name: about/
