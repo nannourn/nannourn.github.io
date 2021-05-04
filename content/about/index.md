@@ -1,7 +1,7 @@
 ---
 title: About
 ---
-[<i class="ai ai-cv-square ai-4x fa-spin"></i>](/vitae/)
+[<i class="ai ai-cv-square ai-3x"></i>](/vitae/)
 
 Hi, I'm Nan! I was born and raised in San Diego, California. I'm currently a Ph.D. student in the Department of [Fisheries & Wildlife](https://fw.msu.edu) and [Ecology, Evolution & Behavior](https://eeb.msu.edu) program at Michigan State University advised by Dr. Dan Kramer.
 

@@ -1,4 +1,4 @@
 ---
 title: Posts
 ---
-[<i class="fas fa-archive fa-4x fa-spin"></i>](/categories/)
+[<i class="fas fa-archive fa-3x"></i>](/categories/)
