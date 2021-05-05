@@ -1,5 +1,5 @@
 baseurl: https://nan.rbind.io
-title: nan
+title: nan nourn™
 theme: hugo-theme-console
 languageCode: en-us
 params:
@@ -12,6 +12,13 @@ params:
     - name: projects/
       url: /projects/
   titleCutting: yes
+  twitter:
+    - image: "/feature.jpg"
+    - site: "nan.rbind.io"
+    - creator: "nan nourn"
+    - title: "nan.rbind.io"
+    - summary: "nan nourn's blog focusing on R code and quantitative analyses."
+    - description: "nan nourn's blog focusing on R code and quantitative analyses."
 
 social:
   facebook: "seriousconservation"
@@ -40,11 +47,3 @@ frontmatter:
   publishDate:
   - publishDate
   - date
-  
-twitter:
-  image: "/feature.jpg"
-  site: "nan.rbind.io"
-  creator: "nan nourn"
-  title: "nan.rbind.io"
-  summary: "Nan Nourn's blog focusing on R code and quantitative analyses."
-  description: "Nan Nourn's blog focusing on R code and quantitative analyses."
