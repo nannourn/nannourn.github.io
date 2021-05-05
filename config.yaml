@@ -42,9 +42,8 @@ frontmatter:
   - date
   
   twitter:
-    image: "profile.jpg"
-    imageAlt: "Default Twitter Card Image"
-    site: "seriouswildlife"
-    creator: "seriouswildlife"
-    title: "nan nourn"
-    description: "Nan Nourn's blog focusing on R code and quantitative analyses."
+    image: "/profile.jpg"
+    site: "nan.rbind.io"
+    creator: "nan nourn"
+    title: "nan.rbind.io"
+    summary: "Nan Nourn's blog focusing on R code and quantitative analyses."
