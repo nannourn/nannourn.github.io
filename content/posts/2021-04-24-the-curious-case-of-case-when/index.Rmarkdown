@@ -6,6 +6,9 @@ slug: []
 categories: [R, GIS, Spatial]
 tags: [stars, raster, cambodia, protected area]
 summary: Creating land cover classification maps in R with a handy .tiff image.
+twitter:
+  image: "/feature.jpeg"
+  title: "title"
 ---
 While this post may only make sense for the graduate students who were enrolled in <a href="https://www.ersamlab.com">Dr. Kyla Dahlin</a>'s graduate GEO 837: Applications Terrestrial Remote Sensing class, it is fairly easy to produce a land cover classification map in R with a .tiff file if land cover designations were classified *a priori* and determined or known by the user.
 
