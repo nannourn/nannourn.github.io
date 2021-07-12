@@ -14,9 +14,7 @@ twitter:
 
 One of the first steps in exploring spatial analyses with R is to produce a map with recorded (x, y) locations; for example, many researchers in wildlife biology mark animal locations with a handheld Garmin GPS and would like to see on a map where all the occurrences of their animal locations have been recorded. I remember it took me forever just to learn this basic exercise so I thought it would be a nice blog post for students in the same position and beginning their spatial journey in becoming a SAP (Spatially Aware Professional).
 
-For #InternationalLeopardDay, I thought it would be a fun and simple exercise to download recorded leopard (*Panthera pardus*) occurrence records from the GBIF database and to produce a basic leopard occurrence map. Here's a nice thread by Dr. Julien Fattebert on all things leopard research from this past decade:
-
-{{< tweet 1389231932588785665 >}}
+For #InternationalLeopardDay, I thought it would be a fun and simple exercise to download recorded leopard (*Panthera pardus*) occurrence records from the GBIF database and to produce a basic leopard occurrence map. 
 
 The [Global Biodiversity Information Facility (GBIF)]('https://www.gbif.org/what-is-gbif') platform provides a source of free and open access to biodiversity data, where many scientists have produced species distribution models and maps to explore a species global range. We'll download leopard location data from GBIF and explore their range. *Note: Like all open source databases, not all information inputted will be accurate. We'll have to use our best judgment to identify outlier points in GBIF, which mostly are attributed to user error.
 

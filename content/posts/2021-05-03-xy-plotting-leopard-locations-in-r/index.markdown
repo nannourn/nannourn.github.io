@@ -14,9 +14,7 @@ twitter:
 
 One of the first steps in exploring spatial analyses with R is to produce a map with recorded (x, y) locations; for example, many researchers in wildlife biology mark animal locations with a handheld Garmin GPS and would like to see on a map where all the occurrences of their animal locations have been recorded. I remember it took me forever just to learn this basic exercise so I thought it would be a nice blog post for students in the same position and beginning their spatial journey in becoming a SAP (Spatially Aware Professional).
 
-For #InternationalLeopardDay, I thought it would be a fun and simple exercise to download recorded leopard (*Panthera pardus*) occurrence records from the GBIF database and to produce a basic leopard occurrence map. Here's a nice thread by Dr. Julien Fattebert on all things leopard research from this past decade:
-
-{{< tweet 1389231932588785665 >}}
+For #InternationalLeopardDay, I thought it would be a fun and simple exercise to download recorded leopard (*Panthera pardus*) occurrence records from the GBIF database and to produce a basic leopard occurrence map. 
 
 The [Global Biodiversity Information Facility (GBIF)]('https://www.gbif.org/what-is-gbif') platform provides a source of free and open access to biodiversity data, where many scientists have produced species distribution models and maps to explore a species global range. We'll download leopard location data from GBIF and explore their range. *Note: Like all open source databases, not all information inputted will be accurate. We'll have to use our best judgment to identify outlier points in GBIF, which mostly are attributed to user error.
 
@@ -38,11 +36,11 @@ pardus <- dismo::gbif("Panthera","pardus", geo = FALSE, nrecs = 300)
 ```
 
 ```
-## 5043 records found
+## 5196 records found
 ```
 
 ```
-## 0-300-600-900-1200-1500-1800-2100-2400-2700-3000-3300-3600-3900-4200-4500-4800-5043 records downloaded
+## 0-300-600-900-1200-1500-1800-2100-2400-2700-3000-3300-3600-3900-4200-4500-4800-5100-5196 records downloaded
 ```
 
 ```r
@@ -52,21 +50,21 @@ pardus %>%
 ```
 
 ```
-## # A tibble: 6 x 195
-##   acceptedNameUsag… acceptedScientifi… acceptedTaxonKey accessRights adm1  adm2 
-##   <chr>             <chr>                         <int> <chr>        <chr> <chr>
-## 1 <NA>              Panthera pardus (…          5219436 <NA>         <NA>  <NA> 
-## 2 <NA>              Panthera pardus p…          7193915 <NA>         Mpum… <NA> 
-## 3 <NA>              Panthera pardus p…          7193915 <NA>         Kwen… <NA> 
-## 4 <NA>              Panthera pardus p…          7193915 <NA>         Mpum… <NA> 
-## 5 <NA>              Panthera pardus p…          7193915 <NA>         Limp… <NA> 
-## 6 <NA>              Panthera pardus p…          7193915 <NA>         Narok <NA> 
-## # … with 189 more variables: associatedOccurrences <chr>,
-## #   associatedReferences <chr>, associatedSequences <chr>, basisOfRecord <chr>,
-## #   bed <chr>, behavior <chr>, bibliographicCitation <chr>,
-## #   catalogNumber <chr>, class <chr>, classKey <int>, cloc <chr>,
-## #   collectionCode <chr>, collectionID <chr>, collectionKey <chr>,
-## #   continent <chr>, coordinatePrecision <dbl>,
+## # A tibble: 6 x 196
+##   acceptedNameUsage acceptedNameUsage… acceptedScientificName   acceptedTaxonKey
+##   <chr>             <chr>              <chr>                               <int>
+## 1 <NA>              <NA>               Panthera pardus (Linnae…          5219436
+## 2 <NA>              <NA>               Panthera pardus pardus            7193915
+## 3 <NA>              <NA>               Panthera pardus pardus            7193915
+## 4 <NA>              <NA>               Panthera pardus pardus            7193915
+## 5 <NA>              <NA>               Panthera pardus pardus            7193915
+## 6 <NA>              <NA>               Panthera pardus pardus            7193915
+## # … with 192 more variables: accessRights <chr>, adm1 <chr>, adm2 <chr>,
+## #   associatedOccurrences <chr>, associatedReferences <chr>,
+## #   associatedSequences <chr>, basisOfRecord <chr>, bed <chr>, behavior <chr>,
+## #   bibliographicCitation <chr>, catalogNumber <chr>, class <chr>,
+## #   classKey <int>, cloc <chr>, collectionCode <chr>, collectionID <chr>,
+## #   collectionKey <chr>, continent <chr>, coordinatePrecision <dbl>,
 ## #   coordinateUncertaintyInMeters <dbl>, country <chr>, crawlId <int>,
 ## #   created <chr>, dataGeneralizations <chr>, datasetID <chr>,
 ## #   datasetKey <chr>, datasetName <chr>, dateIdentified <chr>, day <int>,
@@ -101,8 +99,7 @@ pardus %>%
 ## #   identificationVerificationStatus <chr>, identifiedBy <chr>,
 ## #   identifier <chr>, individualCount <int>, informationWithheld <chr>,
 ## #   infraspecificEpithet <chr>, installationKey <chr>, institutionCode <chr>,
-## #   institutionID <chr>, institutionKey <chr>, isInCluster <lgl>, island <chr>,
-## #   islandGroup <chr>, …
+## #   institutionID <chr>, institutionKey <chr>, …
 ```
 
 The data tibble seems okay, with at least 5,093 records being downloaded. With lots of columns and information provided by GBIF, the main columns of interest are `lon` and `lat` (x,y data) and `locality`. Let's summarize our data by determining out of how many total records there are, how many have coordinates, and how many records do not have coordinates but have a textual geo-reference (locality description).
@@ -116,7 +113,7 @@ pardus %>%
 
 ```
 ##      n
-## 1 5043
+## 1 5196
 ```
 
 ```r
@@ -133,7 +130,7 @@ pardus %>%
 ## # A tibble: 5 x 2
 ##   loc                    n
 ##   <fct>              <int>
-## 1 NA,NA               1772
+## 1 NA,NA               1846
 ## 2 34.965783,32.67288    67
 ## 3 32.15,28.7666         60
 ## 4 35.39,31.47           46
@@ -150,17 +147,28 @@ pardus %>%
 ```
 
 ```
-##                                                            locality n
-## 1                                         Marsabit Forest Ecosystem 1
-## 2                       Mucusso Game Preserve, 90 mi. NNW of Dirico 1
-## 3                                             WESTERN KENYA, MGAADI 1
-## 4  San Francisco Zoo, San Francisco, San Francisco Co., California. 1
-## 5                                               Kamerun, Debundscha 2
-## 6                                                        Java (Ile) 1
-## 7                                     Masai Mara, Hunting Block 60a 1
-## 8                                                 Gondokoro, 7 mi E 1
-## 9                                                            Angola 2
-## 10                        New Moshi [Moshi], near Mount Kilimanjaro 1
+##                                                                                               locality
+## 1                                                                                        Bamboo forest
+## 2                                                                               Southwest Protectorate
+## 3                                                                                     Witkrans Pothole
+## 4                                                      Captive, Source Unknown, Calcutta Zoo, 19280500
+## 5                                                                         Zirkus; Zirkusfamilie Farell
+## 6                                                 Banks of Brahmaputra R.; District of Goalpara; Assam
+## 7                                                                                    Liberia: Monrovia
+## 8  From freshwater forest block in mangrove between Ewoamam and Okpoama, on Brass Islands, Niger Delta
+## 9                                                                                                Sayuo
+## 10                                                                                  Kampi Moto, Nakuru
+##    n
+## 1  1
+## 2  1
+## 3  1
+## 4  1
+## 5  1
+## 6  1
+## 7  1
+## 8  1
+## 9  1
+## 10 1
 ```
 
 So out of ~5,000 records downloaded, 1,772 records do not have geo-referenced coordinates and were inputted as (NA,NA) in the dataset. A lot of the records that were not geo-referenced but had a recorded locality listed were sightings of leopards from zoos, and records that wouldn't be too particularly useful in producing a map, such as "Africa", "on Simiyu River", "see remarks", etc.
