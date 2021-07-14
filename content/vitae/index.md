@@ -24,10 +24,10 @@ Education
           <td class="pa3 bg-washed-green">University of Wisconsin-Madison</td>
         </tr>
         <tr class="stripe-dark">
-          <td class="pa3">2018-Current</td>
-          <td class="pa3">dual-Ph.D.</td>
-          <td class="pa3">Fisheries & Wildlife</td>
-          <td class="pa3">Michigan State University</td>
+          <td class="pa3 bg-washed-green">2018-Current</td>
+          <td class="pa3 bg-washed-green">dual-Ph.D.</td>
+          <td class="pa3 bg-washed-green">Fisheries & Wildlife</td>
+          <td class="pa3 bg-washed-green">Michigan State University</td>
         </tr>
         <tr class="stripe-dark">
           <td class="pa3 bg-washed-green">2018-Current</td>
@@ -36,10 +36,10 @@ Education
           <td class="pa3 bg-washed-green">Michigan State University</td>
         </tr>
         <tr class="stripe-dark">
-          <td class="pa3">2018-2020</td>
-          <td class="pa3">Graduate Certificate</td>
-          <td class="pa3">Spatial Ecology</td>
-          <td class="pa3">Michigan State University</td>
+          <td class="pa3 bg-washed-green">2018-2020</td>
+          <td class="pa3 bg-washed-green">Graduate Certificate</td>
+          <td class="pa3 bg-washed-green">Spatial Ecology</td>
+          <td class="pa3 bg-washed-green">Michigan State University</td>
         </tr>
              <tr class="stripe-dark">
           <td class="pa3 bg-washed-green">2018-Current</td>
@@ -48,10 +48,10 @@ Education
           <td class="pa3 bg-washed-green">Michigan State University</td>
         </tr>
         <tr class="stripe-dark">
-          <td class="pa3">2013</td>
-          <td class="pa3">B.S.</td>
-          <td class="pa3">Biology</td>
-          <td class="pa3">San Diego State University</td>
+          <td class="pa3 bg-washed-green">2013</td>
+          <td class="pa3 bg-washed-green">B.S.</td>
+          <td class="pa3 bg-washed-green">Biology</td>
+          <td class="pa3 bg-washed-green">San Diego State University</td>
         </tr>
         <tr class="stripe-dark">
           <td class="pa3 bg-washed-green">2013</td>
@@ -60,15 +60,16 @@ Education
           <td class="pa3 bg-washed-green">San Diego State University</td>
         </tr>
         <tr class="stripe-dark">
-          <td class="pa3">2011</td>
-          <td class="pa3">A.S.</td>
-          <td class="pa3">Biological Studies</td>
-          <td class="pa3">San Diego Community College District</td>
+          <td class="pa3 bg-washed-green">2011</td>
+          <td class="pa3 bg-washed-green">A.S.</td>
+          <td class="pa3 bg-washed-green">Biological Studies</td>
+          <td class="pa3 bg-washed-green">San Diego Community College District</td>
       </tbody>
     </table>
   </div>
 <div class="f4">
 Research Experience
+</div>
 <div class="pa0">
   <div class="overflow-auto">
     <table class="f7 w-100 mw-100 center" cellspacing="0">
@@ -80,17 +81,72 @@ Research Experience
         </tr>
       </thead>
       <tbody class="lh-copy">
-       <tr class="stripe-dark">
+        <tr class="stripe-dark">
           <td class="pa3 bg-washed-green">2018-Current</td>
           <td class="pa3 bg-washed-green">Graduate Research Assistant</td>
           <td class="pa3 bg-washed-green">Dept. of Fisheries & Wildlife, Michigan State University</td>
           </tr>
-       <tr class="stripe-dark">
+        <tr class="stripe-dark">
           <td class="pa3 bg-washed-green">2018</td>
           <td class="pa3 bg-washed-green">Research Technician</td>
-          <td class="pa3 bg-washed-green">University of California, San Diego</td>
+          <td class="pa3 bg-washed-green">Holway Lab, University of California, San Diego</td>
           </tr>
-
+        <tr class="stripe-dark">
+          <td class="pa3 bg-washed-green">2018</td>
+          <td class="pa3 bg-washed-green">Research Technician</td>
+          <td class="pa3 bg-washed-green">Avian Ecology Lab, Florida Atlantic University</td>
+          </tr>
+        <tr class="stripe-dark">
+          <td class="pa3 bg-washed-green">2017-2018</td>
+          <td class="pa3 bg-washed-green">Fisheries & Wildlife Biological Scientist II</td>
+          <td class="pa3 bg-washed-green">J.W. Corbett WMA, Florida Fish & Wildlife Conservation Commission</td>
+          </tr>
+        <tr class="stripe-dark">
+          <td class="pa3 bg-washed-green">2017</td>
+          <td class="pa3 bg-washed-green">Biological Science Technician (Wildlife)</td>
+          <td class="pa3 bg-washed-green">Alpine Ranger District, Apache-Sitgreaves National Forest, U.S. Forest Service</td>
+          </tr>
+        <tr class="stripe-dark">
+          <td class="pa3 bg-washed-green">2017</td>
+          <td class="pa3 bg-washed-green">Research Technician</td>
+          <td class="pa3 bg-washed-green">Stewart Lab, University of Nevada, Reno</td>
+          </tr>
+        <tr class="stripe-dark">
+          <td class="pa3 bg-washed-green">2015-2016</td>
+          <td class="pa3 bg-washed-green">Research Technician</td>
+          <td class="pa3 bg-washed-green">Borderlands Research Institute, Sul Ross State University</td>
+          </tr>
+        <tr class="stripe-dark">
+          <td class="pa3 bg-washed-green">2015</td>
+          <td class="pa3 bg-washed-green">Biologist</td>
+          <td class="pa3 bg-washed-green">Tunista Services, Inc</td>
+          </tr>
+        <tr class="stripe-dark">
+          <td class="pa3 bg-washed-green">2014-2015</td>
+          <td class="pa3 bg-washed-green">Biological Research Technician</td>
+          <td class="pa3 bg-washed-green">Las Vegas Field Station, Western Ecological Research Center, U.S. Geological Survey</td>
+          </tr>
+        <tr class="stripe-dark">
+          <td class="pa3 bg-washed-green">2013</td>
+          <td class="pa3 bg-washed-green">Research Assistant</td>
+          <td class="pa3 bg-washed-green">Desert Tortoise Conservation Center, San Diego Zoo Institute for Conservation Research</td>
+          </tr>
+        <tr class="stripe-dark">
+          <td class="pa3 bg-washed-green">2013</td>
+          <td class="pa3 bg-washed-green">Sefton Summer Research Fellow</td>
+          <td class="pa3 bg-washed-green">Applied Animal Ecology, San Diego Zoo Institute for Conservation Research</td>
+          </tr>
+        <tr class="stripe-dark">
+          <td class="pa3 bg-washed-green">2012-2013</td>
+          <td class="pa3 bg-washed-green">Undergraduate Research Assistant</td>
+          <td class="pa3 bg-washed-green">Long Lab, San Diego State University</td>
+          </tr>
+        <tr class="stripe-dark">
+          <td class="pa3 bg-washed-green">2011-2013</td>
+          <td class="pa3 bg-washed-green">Undergraduate Research Assistant</td>
+          <td class="pa3 bg-washed-green">Conservation Ecology Lab, San Diego State University</td>
+          </tr>
+</table>
 </div>
 
 
