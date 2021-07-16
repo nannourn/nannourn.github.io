@@ -139,14 +139,66 @@ Research Experience
         <tr class="stripe-dark">
           <td class="pa3 bg-washed-green">2012-2013</td>
           <td class="pa3 bg-washed-green">Undergraduate Research Assistant</td>
-          <td class="pa3 bg-washed-green">Long Lab, San Diego State University</td>
+          <td class="pa3 bg-washed-green">Long Chemical Ecology Lab, San Diego State University</td>
           </tr>
         <tr class="stripe-dark">
           <td class="pa3 bg-washed-green">2011-2013</td>
           <td class="pa3 bg-washed-green">Undergraduate Research Assistant</td>
-          <td class="pa3 bg-washed-green">Conservation Ecology Lab, San Diego State University</td>
+          <td class="pa3 bg-washed-green">Lewison Conservation Ecology Lab, San Diego State University</td>
           </tr>
 </table>
+
+<div class="f4">
+Honors, Awards & Other Stuff
+</div>
+<div class="pa0">
+  <div class="overflow-auto">
+    <table class="f7 w-100 mw-100 center" cellspacing="0">
+      <thead>
+        <tr class="stripe-dark">
+          <th class="fw6 tl pa3">Year</th>
+          <th class="fw6 tl pa3">Amount</th>
+          <th class="fw6 tl pa3">Award</th>
+          <th class="fw6 tl pa3">Institution</th>
+        </tr>
+      </thead>
+      <tbody class="lh-copy">
+        <tr class="stripe-dark">
+          <td class="pa3 bg-washed-green">2021</td>
+          <td class="pa3 bg-washed-green">$6,500</td>
+          <td class="pa3 bg-washed-green">Summer Foreign Language & Area Studies Award</td>
+          <td class="pa3 bg-washed-green">Center for Southeast Asian Studies, University of Michigan, U.S. Dept. of Education</td>
+          </tr>
+          <tr class="stripe-dark">
+          <td class="pa3 bg-washed-green">2019</td>
+          <td class="pa3 bg-washed-green"> </td>
+          <td class="pa3 bg-washed-green">Honorable Mention</td>
+          <td class="pa3 bg-washed-green">Graduate Research Fellowships Program, National Science Foundation</td>
+          </tr>
+            <tr class="stripe-dark">
+          <td class="pa3 bg-washed-green">2019</td>
+          <td class="pa3 bg-washed-green">$6,860</td>
+          <td class="pa3 bg-washed-green">Summer Foreign Language & Area Studies Award</td>
+          <td class="pa3 bg-washed-green">Southeast Asian STudies Summer Institute, University of Madison-Wisconsin, U.S. Dept. of Education</td>
+           <tr class="stripe-dark">
+          <td class="pa3 bg-washed-green">2019</td>
+          <td class="pa3 bg-washed-green">$300</td>
+          <td class="pa3 bg-washed-green">Professional Development Travel Grant</td>
+          <td class="pa3 bg-washed-green">Graduate Student Organization, Dept. of Fisheries & Wildlife, Michigan State University</td>
+          </tr>
+           <tr class="stripe-dark">
+          <td class="pa3 bg-washed-green">2013</td>
+          <td class="pa3 bg-washed-green">$5,500</td>
+          <td class="pa3 bg-washed-green">Sefton Fellowship</td>
+          <td class="pa3 bg-washed-green">Applied Animal Ecology, San Diego Zoo Institute for Conservation Research, San Diego Zoo Global</td>
+          </tr>
+            <tr class="stripe-dark">
+          <td class="pa3 bg-washed-green">2013</td>
+          <td class="pa3 bg-washed-green"> </td>
+          <td class="pa3 bg-washed-green">Dean's List</td>
+          <td class="pa3 bg-washed-green">College of Sciences, San Diego State University</td>
+          </tr>
+        </table>
 </div>
 
 
