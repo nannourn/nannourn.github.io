@@ -83,7 +83,7 @@ penguins %>%
 
 <img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-2-3.png" width="672" />
 
-In the code demonstrated above, I realize that all I am just changing is the name of the columns (`species`, `island`, `sex`) to create the three different plots. The rule of thumb is to avoid duplication of code; here we can attempt to create a function to shorten the number of lines written. We can create a function (I named it `geomcol_discrete`) with the nifty use of double brackets `{{ column }}` to utilize out tidyverse work flow: 
+In the code demonstrated above, I realize that all I am just changing is the name of the columns (`species`, `island`, `sex`) to create the three different plots. The rule of thumb is to avoid duplication of code; here we can attempt to create a function to shorten the number of lines written. We can create a function (I named it `geomcol_discrete`) with the nifty use of double brackets `{{ column }}` to maintain a tidyverse work flow: 
 
 
 ```r
