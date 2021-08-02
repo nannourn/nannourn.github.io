@@ -7,10 +7,10 @@ categories: [R]
 tags: [tidyverse, function, programming]
 summary: Creating a function for simple ggplots.
 twitter:
-  image: "/feature.jpg"
+  image: "/feature.jpeg"
   title: "title"
 ---
-![E-40](images/feature.jpg)
+![E-40](images/feature.jpeg)
 
 I think one of the key steps in making "improvements" on your R journey is to write code that is more clear, concise and short; for me, this usually occurs when I need to create multiple plots of variables when exploring a dataset. 
 
