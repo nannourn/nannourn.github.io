@@ -24,24 +24,20 @@ library(tidyverse)
 library(palmerpenguins)
 theme_set(theme_minimal())
 
-penguins
+penguins %>% glimpse()
 ```
 
 ```
-## # A tibble: 344 × 8
-##    species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g
-##    <fct>   <fct>              <dbl>         <dbl>             <int>       <int>
-##  1 Adelie  Torgersen           39.1          18.7               181        3750
-##  2 Adelie  Torgersen           39.5          17.4               186        3800
-##  3 Adelie  Torgersen           40.3          18                 195        3250
-##  4 Adelie  Torgersen           NA            NA                  NA          NA
-##  5 Adelie  Torgersen           36.7          19.3               193        3450
-##  6 Adelie  Torgersen           39.3          20.6               190        3650
-##  7 Adelie  Torgersen           38.9          17.8               181        3625
-##  8 Adelie  Torgersen           39.2          19.6               195        4675
-##  9 Adelie  Torgersen           34.1          18.1               193        3475
-## 10 Adelie  Torgersen           42            20.2               190        4250
-## # … with 334 more rows, and 2 more variables: sex <fct>, year <int>
+## Rows: 344
+## Columns: 8
+## $ species           <fct> Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel…
+## $ island            <fct> Torgersen, Torgersen, Torgersen, Torgersen, Torgerse…
+## $ bill_length_mm    <dbl> 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, …
+## $ bill_depth_mm     <dbl> 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, …
+## $ flipper_length_mm <int> 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186…
+## $ body_mass_g       <int> 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, …
+## $ sex               <fct> male, female, female, NA, female, male, female, male…
+## $ year              <int> 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007…
 ```
 
 An easy first look at exploring a dataset is to simply count the number of items in a variable. I want to determine the counts across the categorical columns and make a bar plot for each. That happens to be the `species`, `island` and `sex` columns. Here's the long way how to do it:
@@ -57,8 +53,6 @@ penguins %>%
   coord_flip()
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-2-1.png" width="672" />
-
 ```r
 penguins %>% 
   drop_na() %>% 
@@ -68,8 +62,6 @@ penguins %>%
   geom_col() +
   coord_flip()
 ```
-
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-2-2.png" width="672" />
 
 ```r
 penguins %>% 
@@ -81,9 +73,7 @@ penguins %>%
   coord_flip()
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-2-3.png" width="672" />
-
-In the code demonstrated above, I realize that all I am just changing is the name of the columns (`species`, `island`, `sex`) to create the three different plots. The rule of thumb is to avoid duplication of code; here we can attempt to create a function to shorten the number of lines written. We can create a function (I named it `geomcol_discrete`) with the nifty use of double brackets `{{ column }}` to maintain a tidyverse work flow: 
+(There should be three plots but I've disabled the output for brevity's sake). In the code demonstrated above, I realize that all I am just changing is the name of the columns (`species`, `island`, `sex`) to create the three different plots. The rule of thumb is to avoid duplication of code; here we can attempt to create a function to shorten the number of lines written. We can create a function (I named it `geomcol_discrete`) with the nifty use of double brackets `{{ column }}` to maintain a tidyverse work flow: 
 
 
 ```r

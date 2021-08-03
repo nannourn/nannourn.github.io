@@ -23,12 +23,12 @@ library(tidyverse)
 library(palmerpenguins)
 theme_set(theme_minimal())
 
-penguins
+penguins %>% glimpse()
 ```
 
 An easy first look at exploring a dataset is to simply count the number of items in a variable. I want to determine the counts across the categorical columns and make a bar plot for each. That happens to be the `species`, `island` and `sex` columns. Here's the long way how to do it:
 
-```{r message=FALSE, warning=FALSE}
+```{r fig.show='hide', warning=FALSE}
 penguins %>% 
   drop_na() %>% 
   count(species, sort = TRUE) %>% 
@@ -55,7 +55,7 @@ penguins %>%
 
 ```
 
-In the code demonstrated above, I realize that all I am just changing is the name of the columns (`species`, `island`, `sex`) to create the three different plots. The rule of thumb is to avoid duplication of code; here we can attempt to create a function to shorten the number of lines written. We can create a function (I named it `geomcol_discrete`) with the nifty use of double brackets `{{ column }}` to maintain a tidyverse work flow: 
+(There should be three plots but I've disabled the output for brevity's sake). In the code demonstrated above, I realize that all I am just changing is the name of the columns (`species`, `island`, `sex`) to create the three different plots. The rule of thumb is to avoid duplication of code; here we can attempt to create a function to shorten the number of lines written. We can create a function (I named it `geomcol_discrete`) with the nifty use of double brackets `{{ column }}` to maintain a tidyverse work flow: 
 
 ```{r message=FALSE, warning=FALSE}
 # function - discrete plots
