@@ -16,7 +16,7 @@ I think one of the key steps in making "improvements" on your R journey is to wr
 
 I find myself usually making simple bar plots using `ggplot` and `geom_col()` to count things. Instead of copying-and-pasting the same ggplot code and altering the the column names in the code like a newbie hack, I recently learned a new function that can handle the tidyverse workflow when making bar plots.
 
-First, we'll use the [palmerpenguins]('https://allisonhorst.github.io/palmerpenguins/') package to make some bar plots. I examine the penguins dataset to see which columns are categorical/discrete and numerical/continuous:
+First, we'll use the <a href="https://allisonhorst.github.io/palmerpenguins/" target = "_blank">palmerpenguins</a> package to make some bar plots (Yeah, I am fully aware that I should've worked with some Spotify/Apple Music Bay Area music dataset in order to make this blog post even more hyphy...). I examine the penguins dataset to see which columns are categorical/discrete and numerical/continuous:
 
 ```{r message=FALSE, warning=FALSE}
 library(tidyverse)
