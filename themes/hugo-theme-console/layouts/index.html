@@ -1,10 +1,10 @@
 {{ define "main" }}
 
 <div class="helvetica fw9 f1 ttu tc">Welcome.សូមស្វាគម៍។</div>
-<div class="courier fw4 f4 bg-light-pink ttl b--dashed b--white bw1 tc">Nan Nourn នូនណាន is a conservation ecologist and Ph.D. student at Michigan State University in the Department of Fisheries & Wildlife. </br>Nan is a first-generation Cambodian-American who can speak, read and write Khmer ភាសារខ្មែរ.</br>Nan likes using ggplot2 while listening to rap music. </br>Learn more about him  <a href="about/">here</a>.
+<div class="courier fw4 f4 bg-green ttl b--dashed b--white bw1 tc"></br>Nan Nourn នូនណាន is a conservation ecologist and Ph.D. candidate at Michigan State University in the Department of Fisheries & Wildlife. Nan is a first-generation Cambodian-American who can speak, read and write Khmer ភាសារខ្មែរ. Nan likes using ggplot2 while listening to rap music. </br></br>Learn more about him  <a href="about/">here</a>.
 </div>
 <br>
-<div class="helvetica fw9 f2 ttu tc bg-hot-pink">Latest posts</div>
+<div class="helvetica fw9 f2 ttu tc bg-dark-green">Latest posts</div>
 
 <div class="posts-list">
 {{ with .Site.GetPage "/posts" }}
@@ -15,13 +15,13 @@
                 <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
                 {{ .Summary }}
             </p>
-        </div>    
+        </div>
     {{ end }}
 {{ end }}
 </div>
 
 
-<div class="helvetica fw9 f2 ttu tc bg-hot-pink">Latest projects</div>
+<div class="helvetica fw9 f2 ttu tc bg-dark-green">Latest projects</div>
 <br>
 <div class="image-grid">
 {{ with .Site.GetPage "/projects" }}
@@ -38,4 +38,3 @@
 </div>
 
 {{ end }}
-

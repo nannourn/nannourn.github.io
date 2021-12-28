@@ -3,7 +3,7 @@ title: About
 ---
 [<i class="ai ai-cv-square ai-3x"></i>](/vitae/)
 
-Hi, I'm Nan! I was born and raised in San Diego, California. I'm currently a Ph.D. student in the Department of [Fisheries & Wildlife](https://fw.msu.edu) and [Ecology, Evolution & Behavior](https://eeb.msu.edu) program at Michigan State University advised by Dr. Dan Kramer.
+Hi, I'm Nan. I was born and raised in San Diego, California. I'm currently a Ph.D. candidate in the Department of [Fisheries & Wildlife](https://fw.msu.edu) and [Ecology, Evolution & Behavior](https://eeb.msu.edu) program at Michigan State University advised by Dr. Dan Kramer.
 
 My scholarly interests include interdisciplinary research, wildlife ecology, conservation biology, socio-ecological systems, remote sensing and Bayesian and spatial statistics. I apply research tools from these relevant disciplines in order to examine pressing issues in conservation and sustainability in Southeast Asia. 
 
