@@ -89,12 +89,12 @@ Research Experience
         <tr class="stripe-dark">
           <td class="pa3 bg-washed-green">2018</td>
           <td class="pa3 bg-washed-green">Research Technician</td>
-          <td class="pa3 bg-washed-green">Holway Lab, University of California, San Diego</td>
+          <td class="pa3 bg-washed-green">Invasive Species Holway Lab, University of California, San Diego</td>
           </tr>
         <tr class="stripe-dark">
           <td class="pa3 bg-washed-green">2018</td>
           <td class="pa3 bg-washed-green">Research Technician</td>
-          <td class="pa3 bg-washed-green">Avian Ecology Lab, Florida Atlantic University</td>
+          <td class="pa3 bg-washed-green">Avian Ecology Gawlik Lab, Florida Atlantic University</td>
           </tr>
         <tr class="stripe-dark">
           <td class="pa3 bg-washed-green">2017-2018</td>
@@ -109,7 +109,7 @@ Research Experience
         <tr class="stripe-dark">
           <td class="pa3 bg-washed-green">2017</td>
           <td class="pa3 bg-washed-green">Research Technician</td>
-          <td class="pa3 bg-washed-green">Stewart Lab, University of Nevada, Reno</td>
+          <td class="pa3 bg-washed-green">Large Mammal Ecology Stewart Lab, University of Nevada, Reno</td>
           </tr>
         <tr class="stripe-dark">
           <td class="pa3 bg-washed-green">2015-2016</td>
@@ -139,12 +139,12 @@ Research Experience
         <tr class="stripe-dark">
           <td class="pa3 bg-washed-green">2012-2013</td>
           <td class="pa3 bg-washed-green">Undergraduate Research Assistant</td>
-          <td class="pa3 bg-washed-green">Long Chemical Ecology Lab, San Diego State University</td>
+          <td class="pa3 bg-washed-green">Chemical Ecology Long Lab, San Diego State University</td>
           </tr>
         <tr class="stripe-dark">
           <td class="pa3 bg-washed-green">2011-2013</td>
           <td class="pa3 bg-washed-green">Undergraduate Research Assistant</td>
-          <td class="pa3 bg-washed-green">Lewison Conservation Ecology Lab, San Diego State University</td>
+          <td class="pa3 bg-washed-green">Conservation Ecology Lewison Lab, San Diego State University</td>
           </tr>
 </table>
 
@@ -163,9 +163,15 @@ Honors, Awards & Other Stuff
         </tr>
       </thead>
       <tbody class="lh-copy">
+       <tr class="stripe-dark">
+          <td class="pa3 bg-washed-green">2022</td>
+          <td class="pa3 bg-washed-green">$3X,XXX</td>
+          <td class="pa3 bg-washed-green">Blakemore Freeman Fellowship</td>
+          <td class="pa3 bg-washed-green">Blakemore Foundation</td>
+          </tr>
         <tr class="stripe-dark">
           <td class="pa3 bg-washed-green">2021</td>
-          <td class="pa3 bg-washed-green">$6,500</td>
+          <td class="pa3 bg-washed-green">$6,XXX</td>
           <td class="pa3 bg-washed-green">Summer Foreign Language & Area Studies Award</td>
           <td class="pa3 bg-washed-green">Center for Southeast Asian Studies, University of Michigan, U.S. Dept. of Education</td>
           </tr>
@@ -177,9 +183,9 @@ Honors, Awards & Other Stuff
           </tr>
             <tr class="stripe-dark">
           <td class="pa3 bg-washed-green">2019</td>
-          <td class="pa3 bg-washed-green">$6,860</td>
+          <td class="pa3 bg-washed-green">$6,XXX</td>
           <td class="pa3 bg-washed-green">Summer Foreign Language & Area Studies Award</td>
-          <td class="pa3 bg-washed-green">Southeast Asian STudies Summer Institute, University of Madison-Wisconsin, U.S. Dept. of Education</td>
+          <td class="pa3 bg-washed-green">Southeast Asian Studies Summer Institute, University of Madison-Wisconsin, U.S. Dept. of Education</td>
            <tr class="stripe-dark">
           <td class="pa3 bg-washed-green">2019</td>
           <td class="pa3 bg-washed-green">$300</td>
@@ -188,7 +194,7 @@ Honors, Awards & Other Stuff
           </tr>
            <tr class="stripe-dark">
           <td class="pa3 bg-washed-green">2013</td>
-          <td class="pa3 bg-washed-green">$5,500</td>
+          <td class="pa3 bg-washed-green">$5,XXX</td>
           <td class="pa3 bg-washed-green">Sefton Fellowship</td>
           <td class="pa3 bg-washed-green">Applied Animal Ecology, San Diego Zoo Institute for Conservation Research, San Diego Zoo Global</td>
           </tr>
