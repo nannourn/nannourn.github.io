@@ -2,7 +2,7 @@ blog[build]
 command = "hugo"
 publish = "public"
 [build.environment]
-HUGO_VERSION = "0.102.3"
+HUGO_VERSION = '0.102.3'
 
 [context]
 [context.branch-deploy]
