@@ -16,4 +16,4 @@ twitter:
 ---
 Somehow, it only took me 12 hours to figure out how to integrate Hugo, Blogdown and Netlify. Next step: secure an *.rbind.io domain name!
 
-Blogs on coding coming soon :)
+Blogs on coding coming soon :) :)
