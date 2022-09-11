@@ -19,6 +19,7 @@ options(
   blogdown.ext = ".Rmarkdown",
   blogdown.subdir = "posts",
   # build .Rmd to .html (via Pandoc); to build to Markdown, set this option to 'markdown'
-  blogdown.method = 'html'
+  blogdown.method = 'html',
+  blogdown.hugo.version = "0.102.3"
 )
 
