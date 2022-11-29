@@ -5,7 +5,7 @@ title: GEO 827 Theory of Remote Sensing
 type: gallery
 ---
 
-Produced items related to graduate course in Theory of Remote Sensing.
+Produced items related to graduate course in Theory of Remote Sensing. Image source: [Wintery Chill and Lake-effect Snow around Lake Michigan](https://modis.gsfc.nasa.gov/gallery/individual.php?db_date=2021-12-03)
 
 # Maps
 
