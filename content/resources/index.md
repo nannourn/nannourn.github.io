@@ -6,4 +6,4 @@ A list of online resources, because I'm getting old and my browser bookmarks has
 
 # Code
 
--   [carbon.now.sh](https://carbon.now.sh/){target="_blank"}: Create and share beautiful images of your source code
+-   [carbon.now.sh](https://carbon.now.sh/): Create and share beautiful images of your source code
