@@ -11,6 +11,8 @@ params:
       url: /posts/
     - name: projects/
       url: /projects/
+    - name: resources/
+      url: /resources/
   titleCutting: yes
   twitter:
     - image: "/feature.jpg"
@@ -47,3 +49,4 @@ frontmatter:
   publishDate:
   - publishDate
   - date
+
