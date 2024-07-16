@@ -11,8 +11,8 @@ params:
       url: /posts/
     - name: projects/
       url: /projects/
-    - name: dissertation
-      url: /dissertation/_book/
+    - name: dissertation/
+      url: /dissertation/
     - name: resources/
       url: /resources/
   titleCutting: yes
