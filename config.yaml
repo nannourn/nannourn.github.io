@@ -11,8 +11,6 @@ params:
       url: /posts/
     - name: projects/
       url: /projects/
-    - name: dissertation/
-      url: /dissertation/
     - name: resources/
       url: /resources/
   titleCutting: yes
@@ -21,8 +19,8 @@ params:
     - site: "nan.rbind.io"
     - creator: "nan nourn"
     - title: "nan.rbind.io"
-    - summary: "nan nourn's blog focusing on R code and quantitative analyses."
-    - description: "nan nourn's blog focusing on R code and quantitative analyses."
+    - summary: "nan nourn's blog focusing on R code and quantitative ecological analyses."
+    - description: "nan nourn's blog focusing on R code and quantitative ecological analyses."
 
 social:
   facebook: "seriousconservation"

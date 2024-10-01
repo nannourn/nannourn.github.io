@@ -1,21 +1,46 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>R on console-demo</title>
-    <link>https://nourn.netlify.app/categories/r/</link>
-    <description>Recent content in R on console-demo</description>
+    <title>R on nan nourn™ នូនណាន</title>
+    <link>https://nan.rbind.io/categories/r/</link>
+    <description>Recent content in R on nan nourn™ នូនណាន</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Dec 2020 21:13:14 -0500</lastBuildDate><atom:link href="https://nourn.netlify.app/categories/r/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://nan.rbind.io/categories/r/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hello R Markdown</title>
-      <link>https://nourn.netlify.app/posts/2020-12-01-r-rmarkdown/</link>
-      <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
+      <title>We Out Here Tryin&#39; to Function</title>
+      <link>https://nan.rbind.io/posts/2021-08-02-out-here-trying-to-function/</link>
+      <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://nourn.netlify.app/posts/2020-12-01-r-rmarkdown/</guid>
-      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.</description>
+      <guid>https://nan.rbind.io/posts/2021-08-02-out-here-trying-to-function/</guid>
+      <description>Creating a function for simple ggplots.</description>
+    </item>
+    
+    <item>
+      <title>xy: Plotting (Leopard) Locations in R</title>
+      <link>https://nan.rbind.io/posts/2021-05-03-xy-plotting-leopard-locations-in-r/</link>
+      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://nan.rbind.io/posts/2021-05-03-xy-plotting-leopard-locations-in-r/</guid>
+      <description>Creating species occurrence maps with x,y location data.</description>
+    </item>
+    
+    <item>
+      <title>The Curious Case of Case When</title>
+      <link>https://nan.rbind.io/posts/2021-04-24-the-curious-case-of-case-when/</link>
+      <pubDate>Sat, 24 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://nan.rbind.io/posts/2021-04-24-the-curious-case-of-case-when/</guid>
+      <description>Creating land cover classification maps in R with a handy .tiff image.</description>
+    </item>
+    
+    <item>
+      <title>My First Post</title>
+      <link>https://nan.rbind.io/posts/2021-04-22-my-first-post/</link>
+      <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://nan.rbind.io/posts/2021-04-22-my-first-post/</guid>
+      <description>All about my adventures with Hugo, Blogdown and Netlify.</description>
     </item>
     
   </channel>
